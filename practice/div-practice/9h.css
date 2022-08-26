@@ -1,0 +1,32 @@
+.container1{
+  text-align: center;
+}
+.container2{
+  text-align: center;
+  margin-bottom: 0;
+}
+.container3, .container4 {
+  text-align: center;
+  margin-top: 25px;
+}
+.logo {
+  width: 200px;
+}
+.search-button, .lucky-button{
+  font-family: Arial;
+  font-size: 12px;
+  border: none;
+  width: 110px;
+  padding-top: 10px; padding-bottom: 10px;
+  cursor: pointer;
+}
+.search-bar {
+  width: 400px;
+  border-color: rgba(56, 56, 56, 0.10);
+  border-radius: 300px;
+  border-width: 1px;
+  padding-left: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  box-shadow: 3px 3px 5px rgba(56, 56, 56, 0.06);
+}

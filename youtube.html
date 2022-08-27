@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>YouTube Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <style>
       p{
         font-family: Roboto;
@@ -20,7 +23,7 @@
       .video-title {
         margin-top: 0;
         font-size: 14px;
-        font-weight: bold;
+        font-weight: 500;
         line-height: 20px;
         margin-bottom: 12px;
       }
@@ -78,14 +81,19 @@
     </div>
 
     <div class="video-preview">
-      <img
-        class="thumbnail"
-        src="thumbnails/thumbnail-2.webp"
-        alt="photo of video thumbnail"
-      />
-      <p class="video-title">Try Not To Laugh Challenge #9</p>
-      <p class="video-author">Markiplier</p>
-      <p class="video-stats">19M views &#183; 4 years ago</p>
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+      </div>
+      <div>
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel-pictures/channel-2.jpeg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">Try Not To Laugh Challenge #9</p>
+          <p class="video-author">Markiplier</p>
+          <p class="video-stats">19M views &#183; 4 years ago</p>
+        </div>
+      </div>     
     </div>
   </body>
 </html>

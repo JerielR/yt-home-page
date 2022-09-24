@@ -7,6 +7,9 @@ p{
     display: inline-block;
     padding-bottom: 10px;
     vertical-align: top;
+    border: 1px solid rgba(128, 128, 128, 0.15);
+    border-width: 1px;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.15);
   }
   .profile-pic {
     width: 100px;
@@ -36,6 +39,7 @@ p{
     padding-right: 6px;
     border: none;
     border-radius: 3px;
+    cursor: pointer;
   }
   
   .friend-picture-container{

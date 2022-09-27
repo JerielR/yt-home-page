@@ -19,18 +19,18 @@
 
 .hamburger-menu {
     height: 24px;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin: 0px 24px;
+    cursor: pointer;
 }
 
 .youtube-logo {
     height: 20px;
+    cursor: pointer;
 }
 
 .middle-section {
     flex: 1;
-    margin-left: 70px;
-    margin-right: 35px;
+    margin: 0px 35px 0px 70px;
     max-width: 500px;
     display: flex;
     align-items: center;
@@ -49,21 +49,58 @@
 }
 
 .search-bar::placeholder {
-    font-family: Roboto, Arial;
     font-size: 16px;
 }
 
 .search-button {
     height: 40px;
     width: 66px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #f7f7f7;
     border: 1px solid rgb(192, 192, 192);
     box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    margin: 0px 1000px 0px px;
     margin-left: -1px;
     margin-right: 10px;
+}
+
+.search-button, .voice-search-button,
+.upload-icon-container,
+.apps-icon-container,
+.notifications-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.apps-icon-container .tooltip,
+.notifications-icon-container .tooltip {
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.apps-icon-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip {
+    opacity: 1;
 }
 
 .search-icon {
@@ -76,9 +113,6 @@
     border-radius: 20px;
     background-color: rgb(245, 245, 245);
     border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .voice-search-icon {
@@ -131,6 +165,7 @@
 .my-picture {
     height: 32px;
     border-radius: 16px;
+    cursor: pointer;
 }
 
 
